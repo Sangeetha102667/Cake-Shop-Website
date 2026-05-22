@@ -1,0 +1,83 @@
+<html>
+<head>
+	<link rel="stylesheet" href="about.css">
+</head>
+<body>
+	<div id="sideNav">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="login.html">Login</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="cate.html">Chatagories</a></li>
+					<li><a href="ca.html">Similar Chatagories</a></li>
+					<li><a href="order.html">Order Details</a></li>
+					<li><a href="payment .html">Payment</a></li>
+					<li><a href="footer.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="menuBtn">
+			<img src="D:\cake project - 1st Sem\menu.png" id="menu">
+		</div>
+
+		
+	<section id="About">
+		<div class="title-text">
+			<p>About</p>
+			<h1>Believe. Achieve. Succeed.</h1>
+		</div>
+		<div class="About-box">
+			<div class="About">
+				<h1> Our Story</h1>
+				<div class="About-desc">
+				<div class="About-text">
+					<p>At AGS Bakehouse Bliss, we believe that every celebration deserves a 
+					delicious centerpiece. Founded in 2024, our passion for baking began in ssS
+					From humble beginnings in our home kitchen, we've grown into a dedicated team of 
+					cake artists committed to crafting unforgattable desserts.</p>
+				</div>						
+				</div>
+				<h1>Our Mission</h1>
+				<div class="About-desc">
+				<div class="About-text">
+					<p>We strive to bring joy to every occasion with our handcrafted cakes,
+					made from the finest ingredients. Our mission is to create not just cakes, but 
+					experiences that bring people together.</p>
+				</div>						
+				</div>
+				<h1>Contact Us </h1>
+				<div class="About-desc">
+				<div class="About-text">
+					<p>Have questions or special requests? We're here to help! Reach out to us at 
+					<a href="#">alagudhuraisangeetha2@gmail.com</a> or <br>070-5646157.</p>
+				</div>						
+				</div>
+			</div>
+			<div class="About-img">
+				<img src="D:\cake project - 1st Sem\s6.jpeg">
+			</div>
+		</div>
+	</section>
+
+	<script>
+			var menuBtn = document.getElementById("menuBtn")
+			var sideNav = document.getElementById("sideNav")
+			var menu = document.getElementById("menu")
+
+			sideNav.style.right = "-250px";
+
+			menuBtn.onclick = function () {
+				if (sideNav.style.right == "-250px") {
+					sideNav.style.right = "0";
+					menu.src = "D:\cake project - 1st Sem\close.png";
+				}
+				else {
+					sideNav.style.right = "-250px";
+					close.src = "D:\cake project - 1st Sem\menu.png";
+				}
+			}
+		</script>
+
+</body>
+</html>

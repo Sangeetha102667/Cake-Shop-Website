@@ -1,0 +1,102 @@
+<html>
+<head>
+	<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+	<div id="sideNav">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="login.html">Login</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="cate.html">Chatagories</a></li>
+					<li><a href="ca.html">Similar Chatagories</a></li>
+					<li><a href="order.html">Order Details</a></li>
+					<li><a href="payment .html">Payment</a></li>
+					<li><a href="footer.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="menuBtn">
+			<img src="D:\cake project - 1st Sem\menu.png" id="menu">
+		</div>
+		
+	<section id="Catogories">
+		<div class="title-text">
+			<p>Login</p>
+			<h1>We Provide Better</h1>
+		</div>
+		<div class="container">
+			<div class="form-container">
+				<!-- Login Form -->
+				<div id="login-form" class="form active-form">
+					<h2>Login</h2>
+					<div class="input-group">
+						<label for="login-email">Email</label>
+						<input type="email" id="login-email" name="email" required>
+					</div>
+					<div class="input-group">
+						<label for="login-password">Password</label>
+						<input type="password" id="login-password" name="password" required>
+					</div>
+					<button class="btn">Login</button>
+					<p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+				</div>
+				<!-- Register Form -->
+				<div id="register-form" class="form">
+					<h2>Register</h2>
+					<div class="input-group">
+						<label for="register-name">Name</label>
+						<input type="text" id="register-name" name="name" required>
+					</div>
+					<div class="input-group">
+						<label for="register-email">Email</label>
+						<input type="email" id="register-email" name="email" required>
+					</div>
+					<div class="input-group">
+						<label for="register-password">Password</label>
+						<input type="password" id="register-password" name="password" required>
+					</div>
+					<button class="btn">Register</button>
+					<p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+				</div>
+			</div>
+		</div>
+
+		
+
+		<script>
+			function showRegister() {
+				document.getElementById('login-form').classList.remove('active-form');
+				document.getElementById('register-form').classList.add('active-form');
+			}
+
+			function showLogin() {
+				document.getElementById('register-form').classList.remove('active-form');
+				document.getElementById('login-form').classList.add('active-form');
+			}
+		</script>
+
+		<script>
+			var menuBtn = document.getElementById("menuBtn")
+			var sideNav = document.getElementById("sideNav")
+			var menu = document.getElementById("menu")
+
+			sideNav.style.right = "-250px";
+
+			menuBtn.onclick = function () {
+				if (sideNav.style.right == "-250px") {
+					sideNav.style.right = "0";
+					menu.src = "D:\cake project - 1st Sem\close.png";
+				}
+				else {
+					sideNav.style.right = "-250px";
+					close.src = "D:\cake project - 1st Sem\menu.png";
+				}
+			}
+		</script>
+		
+	</section>
+</body>
+</html>

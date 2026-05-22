@@ -1,0 +1,60 @@
+<html>
+<head>
+	 <link rel="stylesheet" href="cate1.css">
+</head>
+<body>
+
+	<div id="sideNav">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="login.html">Login</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="cate.html">Chatagories</a></li>
+					<li><a href="ca.html">Similar Chatagories</a></li>
+					<li><a href="order.html">Order Details</a></li>
+					<li><a href="payment .html">Payment</a></li>
+					<li><a href="footer.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="menuBtn">
+			<img src="D:\cake project - 1st Sem\menu.png" id="menu">
+		</div>
+		
+    <div class="Catogories-box">
+		<div class="single-service">
+			<img src="D:\cake project - 1st Sem\w7.jpg">
+		</div>
+		<div class="single-service">
+			<img src="D:\cake project - 1st Sem\w2.jpg">
+		</div>
+		<div class="single-service">
+			<img src="D:\cake project - 1st Sem\w4.jpg">
+		</div>
+		<div class="single-service">
+			<img src="D:\cake project - 1st Sem\w3.jpg">
+		</div>
+	</div>
+
+	<script>
+			var menuBtn = document.getElementById("menuBtn")
+			var sideNav = document.getElementById("sideNav")
+			var menu = document.getElementById("menu")
+
+			sideNav.style.right = "-250px";
+
+			menuBtn.onclick = function () {
+				if (sideNav.style.right == "-250px") {
+					sideNav.style.right = "0";
+					menu.src = "D:\cake project - 1st Sem\close.png";
+				}
+				else {
+					sideNav.style.right = "-250px";
+					close.src = "D:\cake project - 1st Sem\menu.png";
+				}
+			}
+		</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head>
+	<link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+	<div id="sideNav">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="login.html">Login</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="cate.html">Chatagories</a></li>
+					<li><a href="ca.html">Similar Chatagories</a></li>
+					<li><a href="order.html">Order Details</a></li>
+					<li><a href="payment .html">Payment</a></li>
+					<li><a href="footer.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="menuBtn">
+			<img src="D:\cake project - 1st Sem\menu.png" id="menu">
+		</div>
+		
+		<section id="footer">
+			<div class="title-text">
+				<p>Contact</p>
+				<h1>Visit Shop Today</h1>
+			</div>
+		<div class="footer-row">
+			<div class="footer-left">
+				<h1>Opening hours</h1>
+				<p> Monday to Friday - 9am to 9pm</p>
+				<p> Saturday to Sunday - 8am to 11pm</p>
+			</div>
+			<div class="footer-right">
+				<h1>Get In Touch</h1>
+				<p> Kirkoswald Lower Division,Bogavanthalawa.</p>
+				<p> alagudhuraisangeetha2@gmail.com</p>
+				<p> 070-5646157</p>
+			</div>
+		</div>
+		<div class="social-media">
+    		<a href="https://www.instagram.com/Dedicated_Diaries" target="_blank" aria-label="Instagram">
+        		<i class="fab fa-instagram"></i>
+    		</a>
+    		<a href="https://wa.me/+94769261328" target="_blank" aria-label="WhatsApp">
+        		<i class="fab fa-whatsapp"></i>
+    		</a>
+		</div>
+    
+		</section>	
+
+		<script>
+			var menuBtn = document.getElementById("menuBtn")
+			var sideNav = document.getElementById("sideNav")
+			var menu = document.getElementById("menu")
+
+			sideNav.style.right = "-250px";
+
+			menuBtn.onclick = function () {
+				if (sideNav.style.right == "-250px") {
+					sideNav.style.right = "0";
+					menu.src = "D:\cake project - 1st Sem\close.png";
+				}
+				else {
+					sideNav.style.right = "-250px";
+					close.src = "D:\cake project - 1st Sem\menu.png";
+				}
+			}
+		</script>
+
+</body>
+</html>
+		
