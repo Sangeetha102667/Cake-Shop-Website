@@ -5,7 +5,7 @@
 }
 
 #banner {
-	background: linear-gradient(rgba(0,0,0,0.5),#FFB6C1), url("cake project - 1st Sem/cake1.jpg");
+	background: linear-gradient(rgba(0,0,0,0.5),#FFB6C1), url("cake1.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
